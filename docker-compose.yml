@@ -1,0 +1,22 @@
+services:
+  backend:
+    image: bjamjoom38/todo-backend
+    container_name: todo-backend
+    ports:
+      - "3000:3000"
+    command: npm run start:prod
+    environment:
+      - NODE_ENV=production
+    restart: always
+
+  frontend:
+    image: bjamjoom38/todo-frontend
+    build:
+      context: ./todo-app
+    container_name: todo-frontend
+    ports:
+      - "4200:4200"
+    command: npm run start
+    environment:
+      - NODE_ENV=production
+    restart: always
