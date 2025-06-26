@@ -1,6 +1,6 @@
  Todo App (NestJS + Ionic)
 
-This is a simple full stack Todo app with a NestJS backend and an Ionic React frontend. It supports adding, deleting, and updating tasks.
+This is a simple full stack Todo app with a NestJS backend and an Ionic React frontend. It supports adding, deleting, and checking tasks.
 
  How to Run:
 
